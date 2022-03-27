@@ -5,10 +5,12 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionTask", "FractionTask.csproj", "{FEF9D37D-6A36-4BE8-AEBB-4146CCF195A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractionTaskTests", "..\FractionTaskTests\FractionTaskTests.csproj", "{042BBA9B-2144-4029-A6C5-3FB45E1396F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FractionTaskTests", "..\FractionTaskTests\FractionTaskTests.csproj", "{042BBA9B-2144-4029-A6C5-3FB45E1396F6}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FEF9D37D-6A36-4BE8-AEBB-4146CCF195A5} = {FEF9D37D-6A36-4BE8-AEBB-4146CCF195A5}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrainingCenter", "..\TrainingCenter\TrainingCenter.csproj", "{924AF2F0-D1B2-40F3-906F-E79A625BA017}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{042BBA9B-2144-4029-A6C5-3FB45E1396F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{042BBA9B-2144-4029-A6C5-3FB45E1396F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{042BBA9B-2144-4029-A6C5-3FB45E1396F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{924AF2F0-D1B2-40F3-906F-E79A625BA017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{924AF2F0-D1B2-40F3-906F-E79A625BA017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{924AF2F0-D1B2-40F3-906F-E79A625BA017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{924AF2F0-D1B2-40F3-906F-E79A625BA017}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
