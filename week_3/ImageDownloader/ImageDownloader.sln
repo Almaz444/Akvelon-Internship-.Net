@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageDownloader", "ImageDownloader.csproj", "{1F526966-A3F7-4C0D-B52C-A5EB5A2ACC3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageDownloaderTests", "..\ImageDownloaderTests\ImageDownloaderTests.csproj", "{CF233FE4-4BC5-4211-BB75-F9912126DC04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F526966-A3F7-4C0D-B52C-A5EB5A2ACC3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F526966-A3F7-4C0D-B52C-A5EB5A2ACC3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F526966-A3F7-4C0D-B52C-A5EB5A2ACC3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F526966-A3F7-4C0D-B52C-A5EB5A2ACC3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF233FE4-4BC5-4211-BB75-F9912126DC04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF233FE4-4BC5-4211-BB75-F9912126DC04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF233FE4-4BC5-4211-BB75-F9912126DC04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF233FE4-4BC5-4211-BB75-F9912126DC04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD700ABE-10DB-4F43-87F3-A5AF096A30A4}
+	EndGlobalSection
+EndGlobal
