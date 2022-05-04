@@ -9,16 +9,16 @@ FROM ( VALUES
 	(3,'cancel', CAST('01-06-20'AS date)), 
 	(1,'start', CAST('01-07-20'AS date)), 
 	(1,'publish', CAST('01-07-20'AS date)))  AS users_values(user_id,action,date)),
-result(user_id,starts, cancels, publishes) AS (
+result AS (
 SELECT 
 	user_id,
-	SUM(CASE WHEN action = 'start' THEN 1 ELSE 0 END) AS starts, 
-	SUM(CASE WHEN action = 'cancel' THEN 1 ELSE 0 END) AS cancels, 
-	SUM(CASE WHEN action = 'publish' THEN 1 ELSE 0 END) AS publishes
+	SUM(CASE WHEN action = 'start' THEN 1.0 ELSE 0 END) AS starts, 
+	SUM(CASE WHEN action = 'cancel' THEN 1.0 ELSE 0 END) AS cancels, 
+	SUM(CASE WHEN action = 'publish' THEN 1.0 ELSE 0 END) AS publishes
 FROM users
 GROUP BY user_id)
 SELECT 
    r.user_id, 
-   1.0*r.publishes/r.starts AS publish_rate, 
-   1.0*r.cancels/r.starts AS cancel_rate
+   FORMAT(r.publishes/r.starts, 'N1') AS publish_rate, 
+   FORMAT(r.cancels/r.starts, 'N1')AS cancel_rate
 FROM result r;
